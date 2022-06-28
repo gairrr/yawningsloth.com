@@ -1,0 +1,23 @@
+{
+  "name": "yawningsloth.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gairrr/yawningsloth.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gairrr/yawningsloth.com/issues"
+  },
+  "homepage": "https://github.com/gairrr/yawningsloth.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
