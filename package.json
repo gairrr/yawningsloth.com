@@ -11,13 +11,18 @@
     "type": "git",
     "url": "git+https://github.com/gairrr/yawningsloth.com.git"
   },
-  "author": "",
+  "author": "gairrr",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gairrr/yawningsloth.com/issues"
   },
   "homepage": "https://github.com/gairrr/yawningsloth.com#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.1",
+    "contentful": "^9.1.32",
+    "dotenv": "^16.0.1",
+    "fs-extra": "^10.1.0",
+    "luxon": "^2.4.0",
+    "markdown-it": "^13.0.1"
   }
 }

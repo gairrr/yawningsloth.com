@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  {%- if not is404 %}
+  <link rel="canonical" href="{{ page.url | canonicalUrl }}">
+  <link rel="stylesheet" href="/style.css">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','{{ env.GTM_CONTAINER_ID }}');</script>
+  {%- endif %}
+  <title>{{ title }}</title>
+</head>
+</body>
+  {%- if not is404 %}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ env.GTM_CONTAINER_ID }}"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {%- endif %}
+  {{ content | safe -}}
+</body>
+</html>
